@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_softrism_sencha_backend_domain_AppUser" items="${appusers}" z="7FhXxVwdis/bECEUD8p9y7oP50Y=">
+        <table:table data="${appusers}" id="l_com_softrism_sencha_backend_domain_AppUser" path="/appusers" z="MbQf6Pg6wJCcRARC8Qhq0L6ciHs=">
+            <table:column id="c_com_softrism_sencha_backend_domain_AppUser_firstName" property="firstName" z="GwrSX/6SxYGnYtIVh+0MemyEfL4="/>
+            <table:column id="c_com_softrism_sencha_backend_domain_AppUser_lastName" property="lastName" z="sxPUk7H4gVVtiLfaMdyrMaYHGKM="/>
+            <table:column id="c_com_softrism_sencha_backend_domain_AppUser_userid" property="userid" z="n/vn4MG4K3KhYyZq2xP1wmtoQNI="/>
+            <table:column id="c_com_softrism_sencha_backend_domain_AppUser_password" property="password" z="ZSeX5E+qii4rlZ4V9THjNeqFnfY="/>
+            <table:column id="c_com_softrism_sencha_backend_domain_AppUser_userEmail" property="userEmail" z="ah8xwnA5PUGIEOih0a0EdHrFGUg="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_softrism_sencha_backend_domain_AppUser" object="${appuser}" path="/appusers" z="LQfFOh3fgi2ZlzAEee4x6tVmsJ8=">
+        <field:display field="firstName" id="s_com_softrism_sencha_backend_domain_AppUser_firstName" object="${appuser}" z="d3hTikhwE2XYryN8UCorSILA9hM="/>
+        <field:display field="lastName" id="s_com_softrism_sencha_backend_domain_AppUser_lastName" object="${appuser}" z="GzbWcRE7nO3TkjkTsML3ypUQe2s="/>
+        <field:display field="userid" id="s_com_softrism_sencha_backend_domain_AppUser_userid" object="${appuser}" z="z3kgh+x3O+2YY+6QiBJOsVR7X7k="/>
+        <field:display field="password" id="s_com_softrism_sencha_backend_domain_AppUser_password" object="${appuser}" z="K6bPZNEHnT6ZyIOdo5Wu96ITctI="/>
+        <field:display field="userEmail" id="s_com_softrism_sencha_backend_domain_AppUser_userEmail" object="${appuser}" z="Wm45ybdHKoQN8RzxOOTtDpt2W64="/>
+    </page:show>
+</div>

@@ -1,0 +1,46 @@
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-10-16 15:18:11
+hint
+project --topLevelPackage com.softrism.sencha.backend 
+jpa setup --database HYPERSONIC_IN_MEMORY --provider HIBERNATE 
+hint
+exit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-10-16 15:19:45
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-10-16 15:19:56
+perform package
+exit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-10-16 15:21:20
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-10-16 15:22:38
+hint
+entity jpa --class com.softrism.sencha.backend.domain.AppUser
+field string --fieldName firstName 
+field string --fieldName lastName
+field string --fieldName userid
+// [failed] field string --fieldName password
+field string --fieldName password
+field string --fieldName userEmail
+finder list 
+finder list --depth --filter ByUserid
+finder list --depth 2 --filter ByUserid
+finder list --depth 2 --filter ByUseridEqualsAndPassword
+finder add findAppUsersByUseridEqualsAndPasswordEquals
+web mvc setup
+exit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-10-16 15:30:33
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-10-16 15:33:53
+web mvc all --package com.softrism.sencha.backend.web
+web mvc json all --package com.softrism.sencha.backend.rest.json
+web mvc json all --package com.softrism.sencha.backend.rest.json
+web mvc json all --package com.softrism.sencha.backend.web.json
+web mvc json all --package com.softrism.sencha.backend.web.json
+exit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-10-16 15:37:23
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-10-16 15:37:45
+web mvc json all --package com.softrism.sencha.backend.web.json
+web mvc json all --package com.softrism.sencha.backend.web
+web mvc json all 
+perform package
+web mvc json all --package com.softrism.sencha.backend.web.json
+json all --deepSerialize false
+web mvc json all --package com.softrism.sencha.backend.web.json
+exit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-10-16 15:43:27
