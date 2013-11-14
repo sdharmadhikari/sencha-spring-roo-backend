@@ -93,6 +93,14 @@ privileged aspect AppUserController_Roo_Controller_Json {
         return new ResponseEntity<String>(headers, HttpStatus.OK);
     }
     
+    @RequestMapping(params = "find=ByUseridEquals", headers = "Accept=application/json")
+    @ResponseBody
+    public ResponseEntity<String> AppUserController.jsonFindAppUsersByUseridEquals(@RequestParam("userid") String userid) {
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("Content-Type", "application/json; charset=utf-8");
+        return new ResponseEntity<String>(AppUser.toJsonArray(AppUser.findAppUsersByUseridEquals(userid).getResultList()), headers, HttpStatus.OK);
+    }
+    
     @RequestMapping(params = "find=ByUseridEqualsAndPasswordEquals", headers = "Accept=application/json")
     @ResponseBody
     public ResponseEntity<String> AppUserController.jsonFindAppUsersByUseridEqualsAndPasswordEquals(@RequestParam("userid") String userid, @RequestParam("password") String password) {

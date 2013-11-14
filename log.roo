@@ -44,3 +44,14 @@ json all --deepSerialize false
 web mvc json all --package com.softrism.sencha.backend.web.json
 exit
 // Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-10-16 15:43:27
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-11-13 16:53:37
+focus --class ~.domain.AppUser
+finder list --filter UseridEquals
+finder add findAppUsersByUseridEquals
+security setup
+perform package
+exit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-11-13 17:11:39
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-11-13 17:11:48
+exit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-11-13 17:13:56

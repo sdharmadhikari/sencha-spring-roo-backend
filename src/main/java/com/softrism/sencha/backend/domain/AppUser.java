@@ -7,8 +7,8 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 @RooJavaBean
 @RooToString
-@RooJpaActiveRecord(finders = { "findAppUsersByUseridEqualsAndPasswordEquals" })
 @RooJson
+@RooJpaActiveRecord(finders = { "findAppUsersByUseridEqualsAndPasswordEquals", "findAppUsersByUseridEquals" })
 public class AppUser {
 
     private String firstName;

@@ -9,6 +9,14 @@ import javax.persistence.TypedQuery;
 
 privileged aspect AppUser_Roo_Finder {
     
+    public static TypedQuery<AppUser> AppUser.findAppUsersByUseridEquals(String userid) {
+        if (userid == null || userid.length() == 0) throw new IllegalArgumentException("The userid argument is required");
+        EntityManager em = AppUser.entityManager();
+        TypedQuery<AppUser> q = em.createQuery("SELECT o FROM AppUser AS o WHERE o.userid = :userid", AppUser.class);
+        q.setParameter("userid", userid);
+        return q;
+    }
+    
     public static TypedQuery<AppUser> AppUser.findAppUsersByUseridEqualsAndPasswordEquals(String userid, String password) {
         if (userid == null || userid.length() == 0) throw new IllegalArgumentException("The userid argument is required");
         if (password == null || password.length() == 0) throw new IllegalArgumentException("The password argument is required");
