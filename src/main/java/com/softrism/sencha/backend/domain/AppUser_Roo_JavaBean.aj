@@ -47,4 +47,12 @@ privileged aspect AppUser_Roo_JavaBean {
         this.userEmail = userEmail;
     }
     
+    public String AppUser.getRoleName() {
+        return this.roleName;
+    }
+    
+    public void AppUser.setRoleName(String roleName) {
+        this.roleName = roleName;
+    }
+    
 }

@@ -8,6 +8,7 @@
         <field:input field="userid" id="c_com_softrism_sencha_backend_domain_AppUser_userid" z="ehYDHApLK0Hnes9MTVtuDmdc/PA="/>
         <field:input field="password" id="c_com_softrism_sencha_backend_domain_AppUser_password" z="ykzpXFX1LqLBFuGcroNcEcMUMrc="/>
         <field:input field="userEmail" id="c_com_softrism_sencha_backend_domain_AppUser_userEmail" z="jUFMBa4OK08wumG68eF67pr+IPw="/>
+        <field:input field="roleName" id="c_com_softrism_sencha_backend_domain_AppUser_roleName" z="yrMJZ//rvVI9EgTWuZLF+qlzdbc="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_softrism_sencha_backend_domain_AppUser" render="${not empty dependencies}" z="qfJ2NwNFX1Xsa/ZNR5zoHNXiN6k="/>
 </div>

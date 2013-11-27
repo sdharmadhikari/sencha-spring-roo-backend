@@ -8,5 +8,6 @@
         <field:display field="userid" id="s_com_softrism_sencha_backend_domain_AppUser_userid" object="${appuser}" z="z3kgh+x3O+2YY+6QiBJOsVR7X7k="/>
         <field:display field="password" id="s_com_softrism_sencha_backend_domain_AppUser_password" object="${appuser}" z="K6bPZNEHnT6ZyIOdo5Wu96ITctI="/>
         <field:display field="userEmail" id="s_com_softrism_sencha_backend_domain_AppUser_userEmail" object="${appuser}" z="Wm45ybdHKoQN8RzxOOTtDpt2W64="/>
+        <field:display field="roleName" id="s_com_softrism_sencha_backend_domain_AppUser_roleName" object="${appuser}" z="URXVJJotVIO8IhXCazc8ICaJyKw="/>
     </page:show>
 </div>

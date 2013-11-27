@@ -9,6 +9,7 @@
             <table:column id="c_com_softrism_sencha_backend_domain_AppUser_userid" property="userid" z="n/vn4MG4K3KhYyZq2xP1wmtoQNI="/>
             <table:column id="c_com_softrism_sencha_backend_domain_AppUser_password" property="password" z="ZSeX5E+qii4rlZ4V9THjNeqFnfY="/>
             <table:column id="c_com_softrism_sencha_backend_domain_AppUser_userEmail" property="userEmail" z="ah8xwnA5PUGIEOih0a0EdHrFGUg="/>
+            <table:column id="c_com_softrism_sencha_backend_domain_AppUser_roleName" property="roleName" z="1/VMHs6Mi22OJh/DV65/5VItPZE="/>
         </table:table>
     </page:list>
 </div>

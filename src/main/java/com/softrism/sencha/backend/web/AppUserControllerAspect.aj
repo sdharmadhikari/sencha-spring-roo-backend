@@ -62,6 +62,7 @@ public aspect AppUserControllerAspect {
     pointcut aroundUpdateUser(String jsonUserString) : execution(* com.softrism.sencha.backend.web.AppUserController.updateFromJson(..)) && args(jsonUserString);
 
     Object around(String jsonUserString) : aroundUpdateUser(jsonUserString){
+
         AppUser appUser = AppUser.fromJsonToAppUser(jsonUserString);
 
         String newUserId = appUser.getUserid();
@@ -90,18 +91,6 @@ public aspect AppUserControllerAspect {
         return new ResponseEntity<String>(appUser.toJson(),responseEntity.getHeaders(), responseEntity.getStatusCode());
 
     }
-    /*
-    This does not work, neither if I move throws close with try/catch
-     @Around("execution(* com.softrism.tortlets.web.TuserController.jsonFindTusersByUseridEqualsAndPasswordEquals(..)) && args(userid,password)")
-     public Object myMethod(ProceedingJoinPoint jointPoint, String userid, String password) throws Throwable {
-         ShaPasswordEncoder encoder = new ShaPasswordEncoder(256);
-         String encoded = encoder.encodePassword(password,null);
-         System.out.println("userid " + userid);
-         System.out.println("encoded " + encoded);
-
-         return jointPoint.proceed(new Object[] {userid,encoded}) ;
-     }
-     */
 
 
 }
